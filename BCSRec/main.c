@@ -3,6 +3,8 @@
 
 #include "main.h"
 
+//REQ_001 return the perimeter of a rectangle with the given length and width dimensions.
+
 void main() {
 	int length = 1;
 	int width = 1;
@@ -71,13 +73,13 @@ int getIntInput(char message[]) {
 }
 
 void setLength(int input, int *length) {
-	if (input >= 0 && input < 100) {
+	if (input > 0 && input < 100) {
 		*length = input;
 	}
 }
 
 void setWidth(int input, int *width) {
-	if (input > 0 && input <= 100) {
+	if (input >0 && input < 100) {
 		*width = input;
 	}
 }
